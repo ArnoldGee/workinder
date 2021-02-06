@@ -1,0 +1,19 @@
+.button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.1s ease-out;
+    color: var(--dominant);
+}
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: var(--primary-shadow-small);
+}
+.button--primary {
+    background: var(--primary-gradient);
+}
+.button--subtle {
+    color: var(--primary);
+    background: var(--dominant)
+}

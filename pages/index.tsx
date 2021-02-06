@@ -1,9 +1,12 @@
-import React, { FC, ReactNode } from 'react';
-interface Props {
-  children: ReactNode;
-}
-const index: FC<Props> = ({ children }) => {
-  return <div className="index">{children}</div>;
+import React, { FC } from 'react';
+import Button from '../components/common/atoms/button/Button';
+
+const index: FC<Record<string, never>> = () => {
+  return (
+    <div className="index">
+      <Button>Click me</Button>
+    </div>
+  );
 };
 
 export default index;
