@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,800,900');
+
+/* ====================================================== */
+/* ========= Remove the annoying default styles ========= */
+/* ====================================================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+/* ul {
+    padding: 0;
+    list-style-type: none;
+} */
+
+/* textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+
+  resize: none;
+} */
+
+/* ====================================================== */
+/* =================== Add some colors ================== */
+/* ====================================================== */
+
+/*
+1. Start with a main color and go to https://mycolor.space/
+2. Go to https://picular.co/forest for thematic colors
+3. Go to https://dribbble.com/shots/popular/web-design for inspiration
+4. Go to https://colorsinspo.com/
+*/
+
+:root {
+  --dominant: white; /* For the background, 60%*/
+  --secondary:  #f7931e;/* For the main elements, 30%*/
+  --accent: #ef2dde; /* For little things that you want to stand out, 10% */
+
+  /* --secondary-2: #FFD563;
+  --secondary-3: #F8B500; */
+
+  /*Colors with semantic value, use only if necessary*/
+  --success: #98fd8a;
+  --info: #1fd0e0 ;
+  --failure: #ff0340;
+}
+
+/* ====================================================== */
+/* =================== Add some fonts =================== */
+/* ====================================================== */
+
+/* Go to https://type-scale.com/ */
+
+
+/* Custom selection color*/
+*::selection{
+    background: var(--accent);
+    color: var(--dominant);
+}
+/*Smart quotes */
+q {
+    quotes: "“" "”";
+}
+
+html {font-size: 100%;} /*16px*/
+
+body {
+  background: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.60;
+  color: #000000;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
+
+
+/* ====================================================== */
+/* =============== Utility global classes =============== */
+/* ====================================================== */
+
+/*Text*/
+
+.text-gradient {
+    background: linear-gradient(to left, var(--secondary), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Positioning*/
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+}
+.absolute-center--horizontal {
+  left: 50%;
+  transform: translateX(-50%);
+}
