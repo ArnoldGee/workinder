@@ -1,0 +1,13 @@
+.hero {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: var(--primary-gradient);
+    color: var(--dominant)
+}
+.hero__svg-top {
+
+}
+.hero__svg-bottom {
+    transform: translateY(10px);
+}

@@ -1,0 +1,10 @@
+.card {
+    max-height: 100vh;
+    max-width: 100%;
+    border-radius: 8px;
+    background: var(--dominant);
+    box-shadow: var(--primary-shadow-large);
+}
+.card--padding {
+    padding: 20px;
+}

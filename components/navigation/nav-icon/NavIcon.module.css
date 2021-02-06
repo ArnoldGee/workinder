@@ -1,0 +1,42 @@
+.NavIcon {
+    position: fixed;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 30px;
+    right: 30px;
+    width: 60px;
+    max-width: calc(100vw - 60px);
+    height: 60px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: solid 0 white;
+    background: var(--primary-gradient);
+    transition: all 0.5s ease-out;
+}
+.NavIcon:hover {
+    transform: scale(1.05);
+    box-shadow: var(--primary-shadow-small);
+}
+.NavIcon--open {
+    width: 500px;
+    height: auto;
+    border: solid 5px white;
+}
+.NavIcon--open:hover {
+    transform: scale(1.025);
+}
+.NavIcon__figure{
+    display: block;
+    width: calc(60px - 1rem);
+    height: calc(60px - 1rem);
+}
+.NavIcon__nav-links {
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur(4px);
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+}

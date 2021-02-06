@@ -1,10 +1,12 @@
 import React, { FC } from 'react';
-import Button from '../components/common/atoms/button/Button';
+import Hero from '../components/common/atoms/hero/Hero';
 
 const index: FC<Record<string, never>> = () => {
   return (
     <div className="index">
-      <Button>Click me</Button>
+      <Hero bottom>
+        <h1>Workinder</h1>
+      </Hero>
     </div>
   );
 };
