@@ -39,7 +39,6 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 2rem;
-    padding-bottom: 4rem;
     padding-top: 3rem;
 }
 .card-image {

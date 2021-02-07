@@ -3,8 +3,10 @@
     max-width: 100%;
     border-radius: 8px;
     background: var(--dominant);
-    box-shadow: var(--primary-shadow-large);
 }
 .card--padding {
     padding: 20px;
+}
+.card--shadow-primary{
+    box-shadow: var(--primary-shadow-large);
 }
