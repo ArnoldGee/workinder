@@ -6,26 +6,31 @@
     align-items: flex-end;
     top: 30px;
     right: 30px;
-    width: 60px;
+    width: 70px;
     max-width: calc(100vw - 60px);
-    height: 60px;
+    height: 70px;
     padding: 0.5rem;
     border-radius: 1rem;
-    border: solid 0 white;
+    border: solid 5px white;
     background: var(--primary-gradient);
-    transition: all 0.5s ease-out;
+    transition: transform 0.1s ease-out;
+    opacity: 0.8;
 }
 .NavIcon:hover {
     transform: scale(1.05);
     box-shadow: var(--primary-shadow-small);
+    opacity: 1;
 }
+
 .NavIcon--open {
     width: 500px;
     height: auto;
-    border: solid 5px white;
 }
 .NavIcon--open:hover {
     transform: scale(1.025);
+}
+.NavIcon:active, .NavIcon--open:active {
+    transform: scale(1);
 }
 .NavIcon__figure{
     display: block;

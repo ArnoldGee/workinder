@@ -3,10 +3,10 @@
     display: block;
     width: 100%;
     background: var(--primary-gradient);
-    color: var(--dominant)
+    color: var(--dominant);
 }
 .hero__svg-top {
-
+    margin-top: 0;
 }
 .hero__svg-bottom {
     transform: translateY(10px);

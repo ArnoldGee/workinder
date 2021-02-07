@@ -5,13 +5,13 @@ interface Props {
   children: ReactNode;
   className?: string;
   padding?: boolean;
-  width?: number;
-  height?: number;
+  width?: string;
+  height?: string;
 }
-const Card: FC<Props> = ({ children, className, padding = true, width = 350, height = 500 }) => {
+const Card: FC<Props> = ({ children, className, padding = true, ...style }) => {
   return (
     <article
-      style={{ width: `${width}px`, height: `${height}px` }}
+      style={style}
       className={[styles['card'], className, padding && styles['card--padding']].join(' ')}
     >
       {children}

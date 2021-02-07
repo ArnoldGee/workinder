@@ -59,7 +59,7 @@ ul {
 
 :root {
   --dominant: #ffffff; /* For the background, 60%*/
-  --primary: #F254A2;
+  --primary: #EB686C;
   --secondary:  #f7931e;/* For the main elements, 30%*/
   --accent: #ef2dde; /* For little things that you want to stand out, 10% */
 
@@ -128,6 +128,17 @@ h5 {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
 
+.big-text {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0;
+}
+@media (max-width: 800px){
+  .big-text {
+    font-size: 2.8rem;
+  }
+}
 
 /* ====================================================== */
 /* =============== Utility global classes =============== */
@@ -140,6 +151,9 @@ small, .text_small {font-size: 0.8rem;}
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.text-center {
+  text-align: center;
 }
 
 /*Positioning*/
@@ -158,3 +172,4 @@ small, .text_small {font-size: 0.8rem;}
   left: 50%;
   transform: translateX(-50%);
 }
+

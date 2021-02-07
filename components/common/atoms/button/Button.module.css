@@ -15,5 +15,8 @@
 }
 .button--subtle {
     color: var(--primary);
-    background: var(--dominant)
+    background: var(--dominant);
+}
+.button--subtle-inverted{
+    border: 3px solid var(--dominant);
 }
