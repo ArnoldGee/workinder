@@ -7,14 +7,18 @@ import Card from '../components/common/atoms/card/Card';
 
 const index: FC<Record<string, never>> = () => {
   return (
-    <div className="index">
+    <main className="index">
       <Hero className={styles['hero-1']} bottom>
         <div>
-          <h1>Jinder</h1>
+          <h1>Passion</h1>
           <h1 className="big-text">¿Y si buscar empleo fuese fácil como Tinder? ;)</h1>
           <article className={styles['hero-1__buttons-container']}>
-            <Button buttonStyle="subtle">Encuentra trabajo</Button>
-            <Button buttonStyle="subtle-inverted">Regístrate como empresa</Button>
+            <Button nextHref="/welcome/applicants" buttonStyle="subtle">
+              Encuentra trabajo
+            </Button>
+            <Button nextHref="/welcome/business" buttonStyle="subtle-inverted">
+              Regístrate como empresa
+            </Button>
           </article>
         </div>
         <div className={styles['image-container']}>
@@ -71,11 +75,15 @@ const index: FC<Record<string, never>> = () => {
           No esperes más
         </h1>
         <article className={styles['hero-2__buttons-container']}>
-          <Button buttonStyle="subtle">Encuentra trabajo</Button>
-          <Button buttonStyle="subtle-inverted">Regístrate como empresa</Button>
+          <Button nextHref="/welcome/applicants" buttonStyle="subtle">
+            Encuentra trabajo
+          </Button>
+          <Button nextHref="/welcome/business" buttonStyle="subtle-inverted">
+            Regístrate como empresa
+          </Button>
         </article>
       </Hero>
-    </div>
+    </main>
   );
 };
 
