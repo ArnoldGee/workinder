@@ -1,7 +1,6 @@
 .hero-1 {
     display: grid;
     grid-template-columns: 3fr 2fr;
-
 }
 .hero-1__buttons-container {
     display: flex;

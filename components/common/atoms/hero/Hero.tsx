@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from 'react';
+import cn from 'classnames';
 import styles from './Hero.module.css';
 import Section from '../section/Section';
 
@@ -7,10 +8,11 @@ interface Props {
   className?: string;
   top?: boolean;
   bottom?: boolean;
+  business?: boolean;
 }
-const Hero: FC<Props> = ({ children, top, bottom, ...props }) => {
+const Hero: FC<Props> = ({ children, top, bottom, business, ...props }) => {
   return (
-    <div className={styles['hero']}>
+    <div className={cn(styles['hero'], business && styles['hero--business'])}>
       {top && (
         <svg viewBox="0 0 1440 408" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path

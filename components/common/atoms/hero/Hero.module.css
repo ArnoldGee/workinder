@@ -5,6 +5,9 @@
     background: var(--primary-gradient);
     color: var(--dominant);
 }
+.hero--business {
+    background: var(--business-gradient);
+}
 .hero__svg-top {
     margin-top: 0;
 }

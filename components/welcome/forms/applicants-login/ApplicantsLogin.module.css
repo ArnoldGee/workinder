@@ -1,0 +1,25 @@
+.ApplicantsLogin {
+    position: relative;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 360px;
+    height: 200px;
+    padding: 16px;
+}
+.ApplicantsLogin__form-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px calc(100% - 90px);
+}
+.buttons-container {
+    padding: 16px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    grid-template-rows: 50px;
+}

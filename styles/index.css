@@ -40,6 +40,10 @@ ul {
     list-style-type: none;
 }
 
+input {
+  all: inherit;
+}
+
 /* textarea {
   border: none;
   overflow: auto;

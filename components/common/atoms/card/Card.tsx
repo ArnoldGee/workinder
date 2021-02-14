@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from 'react';
+import cn from 'classnames';
 import styles from './Card.module.css';
 
 interface Props {
@@ -9,6 +10,7 @@ interface Props {
   width?: string;
   height?: string;
 }
+
 const Card: FC<Props> = ({
   children,
   className,
@@ -19,12 +21,12 @@ const Card: FC<Props> = ({
   return (
     <article
       style={style}
-      className={[
+      className={cn(
         styles['card'],
         className,
         padding && styles['card--padding'],
-        styles['card--shadow-' + shadowStyle],
-      ].join(' ')}
+        styles['card--shadow-' + shadowStyle]
+      )}
     >
       {children}
     </article>
